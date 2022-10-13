@@ -1,0 +1,10 @@
+version=4
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-glob-parent-$1/ \
+ https://github.com/es128/glob-parent/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,ctype=nodejs,component=types-glob-parent,pgpmode=none" \
+ https://registry.npmjs.org/@types/glob-parent https://registry.npmjs.org/@types/glob-parent/-/glob-parent-([\d\.]+)@ARCHIVE_EXT@ group

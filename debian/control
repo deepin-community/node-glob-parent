@@ -1,0 +1,30 @@
+Source: node-glob-parent
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , jest <!nocheck>
+ , mocha <!nocheck>
+ , node-is-glob (>= 4.0.3~) <!nocheck>
+ , node-path-dirname <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-glob-parent
+Vcs-Git: https://salsa.debian.org/js-team/node-glob-parent.git
+Homepage: https://github.com/es128/glob-parent
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-glob-parent
+Architecture: all
+Depends: ${misc:Depends}
+ , node-is-glob (>= 4.0.3~)
+ , node-path-dirname
+Provides: ${nodejs:Provides}
+Description: Extract the non-magic parent path from a glob string
+ Javascript module to extract the non-magic parent path from a glob string.
+ .
+ For example, 'path/to/*.js' will return 'path/to' and '**/*.js' will return '.'
+ .
+ Node.js is an event-based server-side JavaScript engine.

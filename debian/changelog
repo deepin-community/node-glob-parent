@@ -1,0 +1,86 @@
+node-glob-parent (6.0.2+~5.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 6.0.2+~5.1.1
+  * Drop patches
+  * Require node-is-glob ≥ 4.0.3~
+
+ -- Yadd <yadd@debian.org>  Thu, 04 Nov 2021 11:55:24 +0100
+
+node-glob-parent (5.1.1+~5.1.0-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-is-glob.
+    + node-glob-parent: Drop versioned constraint on node-is-glob in Depends.
+
+  [ Yadd ]
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+
+ -- Yadd <yadd@debian.org>  Thu, 04 Nov 2021 11:14:36 +0100
+
+node-glob-parent (5.1.1+~5.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix ReDoS (Closes: CVE-2020-28469)
+
+ -- Yadd <yadd@debian.org>  Fri, 16 Apr 2021 13:34:51 +0200
+
+node-glob-parent (5.1.1+~5.1.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto test & install
+  * Embed typescript declaration
+  * New upstream version 5.1.1+~5.1.0
+  * Refresh patch
+  * Drop unneeded version constraints from (build) dependencies
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 18 Oct 2020 22:50:19 +0200
+
+node-glob-parent (3.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 3.1.0
+  * Bump debhelper compatibility level to 11
+  * Use salsa.debian.org in Vcs-* fields
+  * Update dependencies
+  * Bump Standards-Version to 4.2.1 (no changes needed)
+  * Change section to javascript
+  * Remove already applied patch
+  * Add patch for is-glob 4.0 compatibility (Closes: #884544)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 28 Oct 2018 15:55:56 +0530
+
+node-glob-parent (3.0.1-1) unstable; urgency=medium
+
+  * Team upload
+  * fix-braces.patch: Fix test failure in node-glob-base
+
+  [ Sruthi Chandran ]
+  * New upstream release
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 28 Oct 2016 21:08:58 +0530
+
+node-glob-parent (3.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #841172)
+
+ -- Sruthi Chandran <srud@disroot.org>  Tue, 18 Oct 2016 15:16:20 +0530
