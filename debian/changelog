@@ -1,3 +1,11 @@
+node-glob-parent (6.0.2+~5.1.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Add fix for expect >= 28 (Closes: #1011906)
+
+ -- Yadd <yadd@debian.org>  Fri, 27 May 2022 23:15:14 +0200
+
 node-glob-parent (6.0.2+~5.1.1-1) unstable; urgency=medium
 
   * Team upload

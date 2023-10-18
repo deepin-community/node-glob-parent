@@ -1,0 +1,17 @@
+Description: fix for expect (jest) >= 28
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1011906
+Forwarded: no
+Last-Update: 2022-05-27
+
+--- a/test/index.test.js
++++ b/test/index.test.js
+@@ -1,7 +1,7 @@
+ 'use strict';
+ 
+ var gp = require('../');
+-var expect = require('expect');
++var {expect} = require('expect');
+ var isWin32 = require('os').platform() === 'win32';
+ 
+ describe('glob-parent', function () {
